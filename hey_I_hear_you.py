@@ -8,7 +8,7 @@ set_bg_from_local("assets/img.jpeg")
 
 st.title("🌈 Your Pocket Cheerleader: Kris")
 
-with open("assets\style.css") as f:
+with open("assets/style.css") as f:
     
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html= True)
 
