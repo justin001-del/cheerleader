@@ -6,7 +6,7 @@ from utils.bg import set_bg_from_local
 set_bg_from_local("assets/img.jpeg") 
 
 
-st.title("🌈 Your Pocket Cheerleader: Kris")
+st.title("*🌈 Your Pocket Cheerleader: Kris*")
 
 with open("assets/style.css") as f:
     
@@ -43,20 +43,22 @@ if name and issue:
     share=st.button("✨ Cheer Me Up")
     if  share:
         a=random.choice(responses)
-        st.markdown(f'''Read your problem again \n 
+        st.markdown(f'''✨\n
+        Read your problem again \n 
         ["{issue}"], \n 
         It exists.. So does you.. I know it is hard but please don't run. Face it ''')
     
         st.markdown(f'''😊 \n 
          So hey {name}, Here's what I want to say ...\n
          {a}''')
-        st.markdown("*Recovery habits 🪴😌*")
-        st.markdown("💡 Try journaling your thoughts tonight")
-        st.markdown("🧘 Do 5 minutes of deep breathing, no pressure")
-        st.markdown("📚 Pick one page from your fav book and read it")
+        st.markdown('''🪴\n
+         *Recovery habits 😌*\n
+         💡 Try journaling your thoughts tonight\n
+         🧘 Do 5 minutes of deep breathing, no pressure\n
+         📚 Pick one page from your fav book and read it''')
 
 
 else:
-    st.write("Hey 😊, I can't Judge you ,Just say what you want. ")
+    st.markdown("Hey 😊, I can't Judge you ,Just say what you want. ")
 
 
